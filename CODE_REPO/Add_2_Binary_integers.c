@@ -1,7 +1,7 @@
 #include <stdio.h>
  // This algorithm is only for computing the sum 
  // of 2 positive numbers written in binary format
- // Note that this is just ine way of doing this and other
+ // Note that this is just one way of doing this and other
  // apt solutions are also available
 
 void scanArray(int *A, int n)
