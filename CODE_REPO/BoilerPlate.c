@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
-#define RUN 10
+#define RUN 10 // It is the number of Test Cases , adjust as per need
 #define MAXNUM 100000
 #define MAX 100000000
 // This is a boilerplate to run your code on large test cases and store the results, it does not evaluate those
