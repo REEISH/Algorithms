@@ -30,11 +30,11 @@ void swap(int *a, int *b)
 
 int hoarePartition(int *A, int start, int end)
 {
-    int pivot = A[start - 1]; // using last element as pivot
+    int pivot = A[start - 1]; // using first element as pivot
     int i = start - 1;
     int j = end + 1;
 
-    // while start ------- end if element is less than pivot swap to it's left
+    // while always find a pair of elements that are less/greater than pivot then swap them, les one to left and more to right
     while (1)
     {
 
