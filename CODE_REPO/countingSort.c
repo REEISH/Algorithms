@@ -53,7 +53,7 @@ int main()
     printf("Enter a integer N:\n");
     scanf("%d", &N);
     int k;
-    printf("Enter a integer k>N:");
+    printf("Enter a integer k>(max element of array):");
     scanf("%d", &k);
     int Array[N];
     int Result[N + 1];
