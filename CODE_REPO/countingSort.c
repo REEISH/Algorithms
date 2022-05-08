@@ -57,10 +57,6 @@ int main()
     scanf("%d", &k);
     int Array[N];
     int Result[N + 1];
-    /*for (int i = 0; i <= N; i++)
-    {
-        Result[i - 1] = 0;
-    }*/
     printf("Enter the array:\n");
     scanArray(Array, N);
     countingSort(Array, Result, k, N);
