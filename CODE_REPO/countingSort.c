@@ -12,9 +12,9 @@ void scanArray(int *A, int N)
     }
 }
 
-void printArray(int *A, int Start, int end)
+void printArray(int *A, int N)
 {
-    for (int i = Start; i <= end; i++)
+    for (int i = 0; i <= N; i++)
     {
         printf("%d ", A[i]);
     }
@@ -40,7 +40,7 @@ void countingSort(int *A, int *B, int k, int N)
 
     for (int j = N; j >= 1; j--)
     {
-        B[C[A[j - 1]]] = A[j - 1];
+        B[C[A[j - 1]]-1] = A[j - 1];
         C[A[j - 1]] = C[A[j - 1]] - 1;
     }
 }
@@ -60,7 +60,7 @@ int main()
     printf("Enter the array:\n");
     scanArray(Array, N);
     countingSort(Array, Result, k, N);
-    printArray(Result, 1, N);
+    printArray(Result,N);
     clockTime = clock() - clockTime;
     printf("Time taken in execution :%f\n ", ((double)clockTime) / CLOCKS_PER_SEC);
     return 0;
