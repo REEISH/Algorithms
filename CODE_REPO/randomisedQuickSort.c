@@ -53,20 +53,22 @@ int partition(int *A, int start, int end)
     swap(&A[i], &A[end - 1]);
     return i + 1;
 }
-void randomisedPartition(int *A, int start, int end)
+
+int randomisedPartition(int *A, int start, int end)
 {
     int index;
     srand(time(NULL));
-    int j = rand() % (end) + 1;
+    int j = start + rand() % (end - start + 1);
     swap(&A[end - 1], &A[j - 1]);
-   
+    int result = partition(A, start, end);
+    return result;   
 }
 void randomisedQuickSort(int *A, int start, int end)
 {
     int parter; // partingElement
     if (start < end)
     {
-        parter = partition(A, start, end);
+        parter = randomisedPartition(A, start, end);
         randomisedQuickSort(A, start, parter - 1);
         randomisedQuickSort(A, parter + 1, end);
     }
@@ -82,7 +84,6 @@ int main()
     int Array[N];
     printf("Enter the array:\n");
     scanArray(Array, N);
-    randomisedPartition(Array,1,N);
     randomisedQuickSort(Array, 1, N);
     printArray(Array, N);
     clockTime = clock() - clockTime;
