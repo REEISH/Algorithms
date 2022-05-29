@@ -72,12 +72,12 @@ int main()
     printf("Enter a integer M:");
     scanf("%d", &M);
     char X[M];
-    printf("Enter an array of M integers:\n");
+    printf("Enter an array of M charhecters:\n");
     scanf("%s", X);
     printf("Enter a integer N:");
     scanf("%d", &N);
     char Y[N];
-    printf("Enter an array of N integers:\n");
+    printf("Enter an array of N charhecters:\n");
     scanf("%s", Y);
     LCSlength(X, Y, M, N);
     clockTime = clock() - clockTime;
