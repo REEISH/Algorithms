@@ -52,7 +52,7 @@ int DigitReach(int NUM, int DigitGet, int Base)
 {
     while (DigitGet > 1)
     {
-        NUM /= 10;
+        NUM /= Base;
         DigitGet--;
     }
     return NUM % Base;
