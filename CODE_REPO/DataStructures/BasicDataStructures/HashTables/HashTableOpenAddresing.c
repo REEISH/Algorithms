@@ -79,6 +79,7 @@ void OpenHashInsert(HTptr HashT, LONG key, int val, int HashFunction(HTptr HashT
         }
     }
 }
+//To get all the values that belong to the same key, please use a doubly linked list
 
 // Assuming all keys are distinct , it gives the result.
 //  If keys are the same or are duplicate, then it gives the first instance of the key.
