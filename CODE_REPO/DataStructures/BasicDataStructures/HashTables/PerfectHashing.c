@@ -61,7 +61,7 @@ int HashFunction(LONG key, int p, int a, int b, int m)
     return result;
 }
 
-// This is quite a heavyweight function, pleasse improvise this if you can
+// This is quite a heavyweight function, please improvise this if you can
 void InsertAll(HTptr HasHT, LONG *keys, int N)
 {
     int AUX[HasHT->Size];
