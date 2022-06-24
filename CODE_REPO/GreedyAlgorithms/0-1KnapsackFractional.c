@@ -140,3 +140,11 @@ int main()
     printf("Time taken in execution :%f\n ", ((double)clockTime) / CLOCKS_PER_SEC);
     return 0;
 }
+
+// One more intresting and fast approach is to use OrderStatistic\selectioMethods.c
+// procedure saelectInLinearTime to get median of weights and then if median weight > W
+// solve problem on right side and if medianWeight < W, then go to left and solve
+// problem for W-medianweight.
+
+// The method above runs in O(N) time unlike the one shown here,
+// which runs in O(N*lg(N)) time.
