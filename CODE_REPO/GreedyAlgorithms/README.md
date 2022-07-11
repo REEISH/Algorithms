@@ -1,1 +1,1 @@
-All Greeady Algorithms go here
+All Greedy Algorithms go here
